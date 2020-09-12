@@ -19,7 +19,7 @@ export const handleNumberSequence = (numbers: string) => {
     return `Sorry, I can't answer this number sequence question`;
   } else {
     for (let i = 0; i < odds.length; i++) {
-      ret = `${ret}${evens[i] + odds[i]} `;
+      ret = `${ret}${evens[i] + odds[i]}${i!==odds.length-1?' ':''}`;
     }
     return `${ret}`;
   }
